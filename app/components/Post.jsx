@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HiDotsHorizontal } from "react-icons/hi";
+import Icons from './Icons'
 
 const Post = ({ post, id }) => {
   return (
@@ -23,6 +24,7 @@ const Post = ({ post, id }) => {
         <Link href={`/posts/${id}`}>
           <img src={post?.image} alt="post-img" className="rounded-2xl mr-2" />
         </Link>
+        <Icons id={post.id}/>
       </div>
     </div>
   );
